@@ -1,0 +1,14 @@
+html {
+    font-family: Kufam;
+}
+
+img {
+    width: 80px;
+}
+
+p {
+    font-weight: bold;
+    /*font-variation-settings: 'wght' 400; */
+    font-style: italic;
+    font-variant: small-caps;
+}
