@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            background-color: #bbb;
+            display: grid;
+
+            grid-template-columns: 80px 2fr 1fr;
+            grid-template-rows: 50px 40px 40px 30px;
+
+            justify-content: center;
+            justify-items: stretch;
+
+            align-content: center;
+            align-items: stretch;
+
+            grid-template-areas: 
+              "header header header"
+              "left s1 s2"
+              "left s3 s4"
+              "footer footer footer"
+            ;
+
+            gap: 5px 15px;
+
+            grid-auto-rows: 100px;
+
+            height: 90vh; /* vh => viewport height */
+        }
+
+        div {
+            background-color: orange;
+
+            border-radius: 3px;
+        }
+
+        #container > h1 {
+            background-color: green;
+        }
+
+        .first {
+            grid-row: 1 / 2;
+
+            grid-column: 1 / 2;
+        }
+
+        .span-div-6 {
+            grid-row: 2 / 4;
+            grid-column: 3 / 4;
+        }
+
+        .span-div-7 {
+            grid-column: 1 / span 2;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div class="header">header</div>
+        <div class="left">left</div>
+        <div>s1</div>
+        <div>s2</div>
+        <div>s3</div>
+        <div>s4</div>
+        <div class="footer">footer</div>
+    </main>
+</body>
+</html>
