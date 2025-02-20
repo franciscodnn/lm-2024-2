@@ -1,0 +1,88 @@
+body {
+  color: darkslategrey;
+  font-family: arial, sans-serif;
+  font-size: 17px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#copyright {
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1 {
+  font-size:30px;
+
+  font-family: Audiowide, cursive;
+}
+
+h2 {
+  font-size:24px;
+  background-color: lightskyblue;
+
+  border-radius: 5px;
+}
+
+h1, h2, a, a:visited {
+  color: darkblue;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1 a, h1 a:visited {
+  color: white;
+}
+h2 a, h2 a:visited {
+  color: lightskyblue;
+}
+h1:hover a, h2:hover a {
+  color: darkblue;
+}
+
+.fs-1rem {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+@media print {
+  body, h1 {
+    color: black;
+    font-family: Times, serif;
+  }
+}
+
+.btn {
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  color: white;
+  background-color: darkblue;
+  text-decoration: none;
+}
+
+#social {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.color-navy {
+  color: navy;
+}
+
+.color-dodgerblue {
+  color: dodgerblue;
+}
